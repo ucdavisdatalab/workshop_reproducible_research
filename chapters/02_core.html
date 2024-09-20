@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en-us" >
+<html lang="en-us" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>2. Core Practices &#8212; Reproducibility Principles and Practices</title>
   
@@ -15,52 +14,49 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=dddfd265"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/02_core';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -75,19 +71,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -109,12 +109,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -129,9 +137,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="index.html">
+  
   
   
   
@@ -141,12 +153,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/datalab-logo-full-color-rgb-1.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/datalab-logo-full-color-rgb-1.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/datalab-logo-full-color-rgb-1.png" class="logo__image only-light" alt="Reproducibility Principles and Practices - Home"/>
+    <script>document.write(`<img src="../_static/datalab-logo-full-color-rgb-1.png" class="logo__image only-dark" alt="Reproducibility Principles and Practices - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -181,7 +204,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -190,14 +213,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -319,26 +342,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -408,10 +433,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="core-practices">
-<h1><span class="section-number">2. </span>Core Practices<a class="headerlink" href="#core-practices" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">2. </span>Core Practices<a class="headerlink" href="#core-practices" title="Link to this heading">#</a></h1>
 <p>This chapter covers core practices for reproducibility. At DataLab, we adopt
 these practices for every project, and we recommend that you do too.  They’ll
 ensure that you can work on projects efficiently, without being slowed down by
@@ -432,7 +457,7 @@ about. There are two practices listed here—version control
 learn and use. However, they provide benefits for reproducibility,
 collaboration, and distribution that we consider well worth the cost.</p>
 <section id="documentation">
-<h2><span class="section-number">2.1. </span>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.1. </span>Documentation<a class="headerlink" href="#documentation" title="Link to this heading">#</a></h2>
 <!--
 Documentation explains how a project works, the assumptions the project makes,
 and how to actually use the included artifacts (data, code, figures, etc.). 
@@ -443,7 +468,7 @@ it.</p>
 <p>– paraphrased from <a class="reference external" href="https://simon.peytonjones.org/">Simon Peyton Jones</a>, computer scientist</p>
 </div></blockquote>
 <section id="start-with-the-scope">
-<h3><span class="section-number">2.1.1. </span>Start with the Scope<a class="headerlink" href="#start-with-the-scope" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">2.1.1. </span>Start with the Scope<a class="headerlink" href="#start-with-the-scope" title="Link to this heading">#</a></h3>
 <p>At the beginning of a project, write a <strong>scope document</strong> or research proposal
 to lay out the research question and goals. The funding mechanisms in your
 discipline may require this, but even if they don’t, it’s a excellent way to
@@ -476,11 +501,11 @@ be difficult for others to reproduce unless you meticulously document every
 step. When you write code, anyone you share that code with can repeat your
 steps.</p>
 <p>If you need to store a lot of data, especially many different closely related
-tables, consider using a <a class="reference internal" href="04_case_by_case.html#databases"><span class="std std-ref">database</span></a> to store the data.</p>
+tables, consider using a <a class="reference internal" href="03_case_by_case_core.html#databases"><span class="std std-ref">database</span></a> to store the data.</p>
 </div>
 </section>
 <section id="keep-running-notes">
-<h3><span class="section-number">2.1.2. </span>Keep Running Notes<a class="headerlink" href="#keep-running-notes" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">2.1.2. </span>Keep Running Notes<a class="headerlink" href="#keep-running-notes" title="Link to this heading">#</a></h3>
 <p>Set up one or more running notes documents when you set up your project. Use
 the notes to keep track of things you’ve tried, things you want to try,
 relevant references, and more. If you’re working alone, these notes are just
@@ -501,7 +526,7 @@ consider whether you’ll need to include figures, code, or other media, and
 choose an appropriate format. At DataLab, we frequently use paper notes, Google
 Docs, and <a class="reference external" href="https://commonmark.org/">Markdown</a>.</p>
 <section id="for-collaborations">
-<h4><span class="section-number">2.1.2.1. </span>For Collaborations<a class="headerlink" href="#for-collaborations" title="Permalink to this headline">#</a></h4>
+<h4><span class="section-number">2.1.2.1. </span>For Collaborations<a class="headerlink" href="#for-collaborations" title="Link to this heading">#</a></h4>
 <p>If you have collaborators, take notes about your meetings. Record anything
 there’s a chance you’ll want to remember later: results (positive or negative),
 new ideas, new leads, decisions, changes of plan, action items, and scheduling
@@ -520,7 +545,7 @@ Markdown or other plain-text formats.</p>
 </section>
 </section>
 <section id="write-readmes">
-<h3><span class="section-number">2.1.3. </span>Write READMEs<a class="headerlink" href="#write-readmes" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">2.1.3. </span>Write READMEs<a class="headerlink" href="#write-readmes" title="Link to this heading">#</a></h3>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
 <div class="admonition note">
@@ -577,7 +602,7 @@ the form of READMEs or other files.</p>
 about how to write READMEs.</p>
 </div>
 <section id="file-manifests">
-<span id="id1"></span><h4><span class="section-number">2.1.3.1. </span>File Manifests<a class="headerlink" href="#file-manifests" title="Permalink to this headline">#</a></h4>
+<span id="id1"></span><h4><span class="section-number">2.1.3.1. </span>File Manifests<a class="headerlink" href="#file-manifests" title="Link to this heading">#</a></h4>
 <p>A <strong>file manifest</strong> is a description of the files and directories in a project.
 For intuition, think of a shipping manifest on a box sent to you in the mail. A
 file manifest serves two important purposes:</p>
@@ -605,7 +630,7 @@ toy_data/       Very (very!) small pieces of data for dev testing
 clearer to write a separate manifest specifically for that directory.</p>
 </section>
 <section id="workflows">
-<span id="id2"></span><h4><span class="section-number">2.1.3.2. </span>Workflows<a class="headerlink" href="#workflows" title="Permalink to this headline">#</a></h4>
+<span id="id2"></span><h4><span class="section-number">2.1.3.2. </span>Workflows<a class="headerlink" href="#workflows" title="Link to this heading">#</a></h4>
 <p>A <strong>workflow</strong> is a way of using your project. Often this will be a series of
 commands you can run to produce a specific output. For example, if your project
 is a study of passenger rail systems in the U.S., you might have three scripts
@@ -649,9 +674,9 @@ workflow into a single command.</p>
 </section>
 </section>
 <section id="artifact-preservation">
-<h2><span class="section-number">2.2. </span>Artifact Preservation<a class="headerlink" href="#artifact-preservation" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.2. </span>Artifact Preservation<a class="headerlink" href="#artifact-preservation" title="Link to this heading">#</a></h2>
 <section id="make-backups">
-<h3><span class="section-number">2.2.1. </span>Make Backups<a class="headerlink" href="#make-backups" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">2.2.1. </span>Make Backups<a class="headerlink" href="#make-backups" title="Link to this heading">#</a></h3>
 <p>Hard drives can and do fail. Store at least one backup copy of each project on
 a different computer, on an external hard drive, or in the cloud. This way, if
 your hard drive stops working, you won’t lose everything. Make a schedule for
@@ -671,7 +696,7 @@ specific privacy requirements, be careful to make sure they’re satisfied when
 choosing a cloud service.</p>
 </section>
 <section id="use-version-control">
-<span id="id3"></span><h3><span class="section-number">2.2.2. </span>Use Version Control<a class="headerlink" href="#use-version-control" title="Permalink to this headline">#</a></h3>
+<span id="id3"></span><h3><span class="section-number">2.2.2. </span>Use Version Control<a class="headerlink" href="#use-version-control" title="Link to this heading">#</a></h3>
 <p>A <strong>version control system</strong> is a system for tracking changes to documents,
 code, or other data. You may already use copies of files with different names
 as a kind of ad-hoc version control: <code class="docutils literal notranslate"><span class="pre">essay.doc</span></code>, <code class="docutils literal notranslate"><span class="pre">essay_edited.doc</span></code>,
@@ -682,7 +707,7 @@ implied that they mean version control software. In addition to helping you
 keep track of different versions of files, most modern version control software
 can also help you share and collaborate on files with others.</p>
 <section id="for-documents">
-<h4><span class="section-number">2.2.2.1. </span>For Documents<a class="headerlink" href="#for-documents" title="Permalink to this headline">#</a></h4>
+<h4><span class="section-number">2.2.2.1. </span>For Documents<a class="headerlink" href="#for-documents" title="Link to this heading">#</a></h4>
 <p>Cloud-based office suites such as Microsoft 365 and Google Office have version
 control built-in. Consult the documentation for your preferred office suite to
 learn more. A disadvantage of these services is that they typically save
@@ -700,7 +725,7 @@ documents out-of-the-box, but has many of the same advantages as Markdown,
 consider <a class="reference external" href="https://www.latex-project.org/">LaTeX</a>.</p>
 </section>
 <section id="for-code">
-<h4><span class="section-number">2.2.2.2. </span>For Code<a class="headerlink" href="#for-code" title="Permalink to this headline">#</a></h4>
+<h4><span class="section-number">2.2.2.2. </span>For Code<a class="headerlink" href="#for-code" title="Link to this heading">#</a></h4>
 <p>Version control systems for code first appeared in the 1960s and are now widely
 considered an essential part of every programmer’s toolkit. One reason for this
 is that code is usually developed incrementally: you write code for a new
@@ -732,9 +757,9 @@ for a technical introduction to version control with git.</p>
 </section>
 </section>
 <section id="project-organization">
-<h2><span class="section-number">2.3. </span>Project Organization<a class="headerlink" href="#project-organization" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.3. </span>Project Organization<a class="headerlink" href="#project-organization" title="Link to this heading">#</a></h2>
 <section id="use-naming-conventions">
-<h3><span class="section-number">2.3.1. </span>Use Naming Conventions<a class="headerlink" href="#use-naming-conventions" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">2.3.1. </span>Use Naming Conventions<a class="headerlink" href="#use-naming-conventions" title="Link to this heading">#</a></h3>
 <blockquote>
 <div><p>There are only two hard things in Computer Science: cache invalidation and
 naming things.</p>
@@ -752,7 +777,7 @@ Different contexts often benefit from different naming conventions. For
 instance, it’s usually a helpful to have separate naming conventions for files
 and for code.</p>
 <section id="file-and-directory-names">
-<h4><span class="section-number">2.3.1.1. </span>File and Directory Names<a class="headerlink" href="#file-and-directory-names" title="Permalink to this headline">#</a></h4>
+<h4><span class="section-number">2.3.1.1. </span>File and Directory Names<a class="headerlink" href="#file-and-directory-names" title="Link to this heading">#</a></h4>
 <p>Choose filenames that are human-readable, machine-readable, and have a
 meaningful order when sorted alphabetically. Many data scientists recommend the
 following rules for naming files:</p>
@@ -774,7 +799,7 @@ simplifying exceptions around how we use underscores and dashes.</p>
 <figure class="align-default" id="xkcd-iso-8601">
 <img alt="" src="../_images/xkcd_iso_8601.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 2.1 </span><span class="caption-text">“ISO 8601” from <a class="reference external" href="https://xkcd.com/">“xkcd”</a> by Randall Munroe (<a class="reference external" href="https://xkcd.com/license.html">license</a>).</span><a class="headerlink" href="#xkcd-iso-8601" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.1 </span><span class="caption-text">“ISO 8601” from <a class="reference external" href="https://xkcd.com/">“xkcd”</a> by Randall Munroe (<a class="reference external" href="https://xkcd.com/license.html">license</a>).</span><a class="headerlink" href="#xkcd-iso-8601" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition seealso">
@@ -786,7 +811,7 @@ Things</a>.</p>
 </div>
 </section>
 <section id="names-in-code">
-<h4><span class="section-number">2.3.1.2. </span>Names in Code<a class="headerlink" href="#names-in-code" title="Permalink to this headline">#</a></h4>
+<h4><span class="section-number">2.3.1.2. </span>Names in Code<a class="headerlink" href="#names-in-code" title="Link to this heading">#</a></h4>
 <p>Most programming languages have a <strong>style guide</strong> with standards for how to
 format code, either officially or by community consensus. Following a style
 guide helps make your code intelligible to other programmers. Style guides
@@ -853,7 +878,7 @@ for Felienne Hermans’ perspective as a computer science education researcher.<
 </section>
 </section>
 <section id="establish-a-directory-structure">
-<span id="establish-directory-structure"></span><h3><span class="section-number">2.3.2. </span>Establish a Directory Structure<a class="headerlink" href="#establish-a-directory-structure" title="Permalink to this headline">#</a></h3>
+<span id="establish-directory-structure"></span><h3><span class="section-number">2.3.2. </span>Establish a Directory Structure<a class="headerlink" href="#establish-a-directory-structure" title="Link to this heading">#</a></h3>
 <p>Create a separate, dedicated directory, often called a <strong>repository</strong>, for each
 of your projects. Store everything related to the project there. This will make
 it easier to find files and also to share specific projects with others. Use
@@ -888,11 +913,11 @@ structure you decide to use in your project’s README (see
 </div>
 </section>
 <section id="organize-the-code">
-<span id="id4"></span><h3><span class="section-number">2.3.3. </span>Organize the Code<a class="headerlink" href="#organize-the-code" title="Permalink to this headline">#</a></h3>
+<span id="id4"></span><h3><span class="section-number">2.3.3. </span>Organize the Code<a class="headerlink" href="#organize-the-code" title="Link to this heading">#</a></h3>
 <figure class="align-default" id="xkcd-goto">
 <img alt="" src="../_images/xkcd_goto.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 2.2 </span><span class="caption-text">“goto” from <a class="reference external" href="https://xkcd.com/">“xkcd”</a> by Randall Munroe (<a class="reference external" href="https://xkcd.com/license.html">license</a>).</span><a class="headerlink" href="#xkcd-goto" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.2 </span><span class="caption-text">“goto” from <a class="reference external" href="https://xkcd.com/">“xkcd”</a> by Randall Munroe (<a class="reference external" href="https://xkcd.com/license.html">license</a>).</span><a class="headerlink" href="#xkcd-goto" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Whenever you’re about to write code, take time to think about what its purpose
@@ -912,10 +937,10 @@ window or file.</p>
 <a class="reference internal image-reference" href="../_images/logo_rmarkdown.png"><img alt="" class="align-center" src="../_images/logo_rmarkdown.png" style="width: 50%;" /></a>
 </div>
 <div class="sd-col sd-d-flex-column docutils">
-<a class="reference internal image-reference" href="../_images/logo_jupyter.svg"><img alt="" class="align-center" src="../_images/logo_jupyter.svg" width="50%" /></a>
+<a class="reference internal image-reference" href="../_images/logo_jupyter.svg"><img alt="" class="align-center" src="../_images/logo_jupyter.svg" style="width: 50%;" /></a>
 </div>
 <div class="sd-col sd-d-flex-column docutils">
-<a class="reference internal image-reference" href="../_images/logo_quarto.svg"><img alt="" class="align-center" src="../_images/logo_quarto.svg" width="50%" /></a>
+<a class="reference internal image-reference" href="../_images/logo_quarto.svg"><img alt="" class="align-center" src="../_images/logo_quarto.svg" style="width: 50%;" /></a>
 </div>
 </div>
 </div>
@@ -929,7 +954,7 @@ problems and develop code. Don’t feel locked in to one or the other, and
 remember that generally notebooks can load functions and other code from
 scripts.</p>
 <section id="write-functions">
-<h4><span class="section-number">2.3.3.1. </span>Write Functions<a class="headerlink" href="#write-functions" title="Permalink to this headline">#</a></h4>
+<h4><span class="section-number">2.3.3.1. </span>Write Functions<a class="headerlink" href="#write-functions" title="Link to this heading">#</a></h4>
 <p>To solve problems efficiently and better organize your code, try to break
 programming tasks into small, manageable steps. Use writing (for instance, in
 comments) to clarify and plan the steps. For each step, write the code to solve
@@ -961,7 +986,7 @@ stop and adjust the outline as you uncover gaps in your reasoning.</p>
 </div>
 </section>
 <section id="make-it-modular">
-<h4><span class="section-number">2.3.3.2. </span>Make It Modular<a class="headerlink" href="#make-it-modular" title="Permalink to this headline">#</a></h4>
+<h4><span class="section-number">2.3.3.2. </span>Make It Modular<a class="headerlink" href="#make-it-modular" title="Link to this heading">#</a></h4>
 <p>Create separate scripts for separate parts of your project. For example, you
 might have a script to clean the data, a script to train a model, a script to
 generate predictions from the trained model, and a script to generate figures
@@ -986,9 +1011,9 @@ See https://speakerdeck.com/jennybc/zen-and-the-art-of-workflow-maintenance?slid
 </section>
 </section>
 <section id="workflow-automation">
-<h2><span class="section-number">2.4. </span>Workflow Automation<a class="headerlink" href="#workflow-automation" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">2.4. </span>Workflow Automation<a class="headerlink" href="#workflow-automation" title="Link to this heading">#</a></h2>
 <section id="compute-with-code">
-<span id="use-a-programming-language"></span><h3><span class="section-number">2.4.1. </span>Compute with Code<a class="headerlink" href="#compute-with-code" title="Permalink to this headline">#</a></h3>
+<span id="use-a-programming-language"></span><h3><span class="section-number">2.4.1. </span>Compute with Code<a class="headerlink" href="#compute-with-code" title="Link to this heading">#</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This practice is recommended for projects that involve computations. If your
@@ -1016,10 +1041,10 @@ yourself—you can reuse someone else’s code.</p>
 <a class="reference internal image-reference" href="../_images/logo_r.png"><img alt="" class="align-center" src="../_images/logo_r.png" style="width: 50%;" /></a>
 </div>
 <div class="sd-col sd-d-flex-column docutils">
-<a class="reference internal image-reference" href="../_images/logo_python_device.svg"><img alt="" class="align-center" src="../_images/logo_python_device.svg" width="40%" /></a>
+<a class="reference internal image-reference" href="../_images/logo_python_device.svg"><img alt="" class="align-center" src="../_images/logo_python_device.svg" style="width: 40%;" /></a>
 </div>
 <div class="sd-col sd-d-flex-column docutils">
-<a class="reference internal image-reference" href="../_images/logo_julia.svg"><img alt="" class="align-center" src="../_images/logo_julia.svg" width="50%" /></a>
+<a class="reference internal image-reference" href="../_images/logo_julia.svg"><img alt="" class="align-center" src="../_images/logo_julia.svg" style="width: 50%;" /></a>
 </div>
 </div>
 </div>
@@ -1102,11 +1127,10 @@ and consider joining the <a class="reference external" href="https://datalab.ucd
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer d-print-none">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="01_principles.html"
@@ -1126,10 +1150,7 @@ and consider joining the <a class="reference external" href="https://datalab.ucd
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -1137,6 +1158,7 @@ and consider joining the <a class="reference external" href="https://datalab.ucd
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1205,6 +1227,7 @@ By Nick Ulle
   
   <div class="footer-item">
     
+
   </div>
   
   <div class="footer-item">
@@ -1230,8 +1253,8 @@ By Nick Ulle
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
